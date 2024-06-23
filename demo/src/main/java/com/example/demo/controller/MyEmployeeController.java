@@ -43,7 +43,7 @@ public class MyEmployeeController {
 	}
 	@GetMapping("/getUser/{id}")
 	public List<Employee> getEmployeeById(@PathVariable Integer id){
-
+		System.out.println("Added sys out");
 		return null;
 	}
 }
