@@ -41,4 +41,10 @@ public class MyEmployeeController {
 	public void deletebyId(@PathVariable(value = "id") Integer Id) {
 		  service.deleteEmpId(Id);
 	}
+	@GetMapping("/getUser/{id}")
+	public List<Employee> getEmployeeById(@PathVariable Integer id){
+
+		return null;
+	}
 }
+
