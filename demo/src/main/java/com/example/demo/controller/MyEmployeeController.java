@@ -31,6 +31,7 @@ public class MyEmployeeController {
 	}
 	@GetMapping("/getAllEmployee")
 	public List<Employee> getAllEmployees(){
+		logger.info("Getting All Employees from Db");
 		return service.getEmployees();
 		
 	}
